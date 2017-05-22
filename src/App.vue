@@ -1,13 +1,16 @@
 <template>
-    <div id="app"></div>
+    <div id="app">
+        <router-link to="/channel">To 频道</router-link>
+        <router-link to="/channelDetail">To 频道详情</router-link>
+        <router-view></router-view>
+    </div>
 </template>
 
 <script>
     export default {
-        name: 'app',
         data () {
             return {
-                msg: ''
+                msg: 'a'
             }
         }
     }
